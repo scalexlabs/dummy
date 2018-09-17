@@ -5,7 +5,7 @@
     (https://<region>.console.aws.amazon.com/codepipeline)
 
 2.	Before creating a new pipeline, select the region of your choice from top left corner region selection option
-    <img src="media/1.png" width="300" Height="500" title="Select Region">
+    <img src="media/1.png" width="300" title="Select Region">
 
 3.	Select Get started or Create pipeline.
 
