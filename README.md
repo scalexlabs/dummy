@@ -235,3 +235,68 @@
 18.	In Step 6: Review, choose Create pipeline
 
 
+## Add additional stages for approval to the CodePipeline
+1.	Go to the pipeline you created just now
+
+2.	Choose Edit
+
+3.	At the end of the desired Staging, choose Stage 
+
+4.	For Enter stage name, enter <Desired-Approval-Stage-Name>
+
+5.	Choose Action
+
+6.	For Action category, select Approval
+
+7.	For Action name, enter <Desired-Approval-Stage-Name>
+
+8.	For Approval type, select Manual approval
+
+9.	Under Manual approval configuration, select arn for SNS topic already created or create new SNS topic
+
+10.	 For Comments, enter <Desired-Comments>
+
+11.	 Choose Add action
+
+12.	  Choose Save pipeline changes
+
+13.	 Choose Save and continue
+
+14.	 Can verify the new pipeline changes by choosing Release change
+
+## Add additional stages for code testing to the CodePipeline
+1.	Go to the pipeline you created just now
+
+2.	Choose Edit
+
+3.	At the end of the desired Staging, choose Stage 
+
+4.	For Enter stage name, enter <Desired-Test-Stage-Name>
+
+5.	Choose Action
+
+6.	For Action category, select Test
+
+7.	For Action name provide desired-Test-action-name
+
+8.	Select the Test provider as AWS CodeBuild
+
+9.	Create a new CodeBuild Project with project name as desired-project-name
+
+10.	Configure the same environment as done earlier for build/deployment stage
+
+11.	select Build specification as Insert build commands
+    <img src="media/5.png" title="Build specification as Insert build commands">
+
+12.	Add following build commands for example
+    ```
+    cd TenantAdminAPIs && npm install && npm install -g serverless && npm run test
+    ```
+    <img src="media/6.png" title="commands">
+
+13.	Select the CodeBuild service role created earlier Then say “save build project”
+
+14.	You are done adding test stage to your CICD pipeline using serverless.
+    Note: use below sample screen to create and push buildspec.yml file in the root repository.
+    <img src="media/7.png" title="commands">
+
