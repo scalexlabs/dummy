@@ -23,7 +23,7 @@
 9.	Choose Next step
 
 10.	In Step 3: Build, select Build provider as AWS CodeBuild
-    <img src="media/3.png" width="500" title="Select Source Provider">
+    <img src="media/3.png" width="500" title="Select Build Provider">
 
 11.	Under Configure your project, select Create a new build project
 -	For Project name enter <Desired-Project-Name>
@@ -134,7 +134,7 @@
 13.	Choose Next step in CodePipeline console
 
 14.	Select No Deployment in deploy stage
-    <img src="media/4.png" width="500" title="Select Source Provider">
+    <img src="media/4.png" width="300" title="Select Deployment Provider">
 
 15.	Choose Next step
 
@@ -231,5 +231,7 @@
     "Version": "2012-10-17"
 }
 ```
+
+18.	In Step 6: Review, choose Create pipeline
 
 
