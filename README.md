@@ -1,2 +1,2 @@
 # dummy
-This repository is for testing the redme files.
+This repository is for testing the readme files.
