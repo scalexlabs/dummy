@@ -24,3 +24,11 @@
 
 10.	In Step 3: Build, select Build provider as AWS CodeBuild
     <img src="media/3.png" width="500" title="Select Source Provider">
+
+11.	Under Configure your project, select Create a new build project
+-	For Project name enter <Desired-Project-Name>
+-	For Operating system, select Ubuntu
+-	For Runtime, select Node.js
+-	For Version, select aws/codebuild/nodejs:8.11.0
+-   Leave the Role name under AWS CodeBuild service role as default 
+-	Open Advanced section
