@@ -5,14 +5,14 @@
     (https://<region>.console.aws.amazon.com/codepipeline)
 
 2.	Before creating a new pipeline, select the region of your choice from top left corner region selection option
-    <img src="media/1.png" width="300" title="Select Region">
+    <img src="media/1.png" title="Select Region">
 
 3.	Select Get started or Create pipeline.
 
 4.	Choose Next step
 
 5.	In Step 2: Source, select Source provider as GitHub from the dropdown
-    <img src="media/2.png" width="500" title="Select Source Provider">
+    <img src="media/2.png" title="Select Source Provider">
 
 6.	Choose Connect to GitHub if not already signed in
 
@@ -23,7 +23,7 @@
 9.	Choose Next step
 
 10.	In Step 3: Build, select Build provider as AWS CodeBuild
-    <img src="media/3.png" width="500" title="Select Build Provider">
+    <img src="media/3.png" title="Select Build Provider">
 
 11.	Under Configure your project, select Create a new build project
 -	For Project name enter <Desired-Project-Name>
@@ -134,7 +134,7 @@
 13.	Choose Next step in CodePipeline console
 
 14.	Select No Deployment in deploy stage
-    <img src="media/4.png" width="500" height="100" title="Select Deployment Provider">
+    <img src="media/4.png" title="Select Deployment Provider">
 
 15.	Choose Next step
 
