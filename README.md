@@ -18,7 +18,7 @@
 
 7.	Select Repository **ApplicationServices**
 
-8.	Select *desired-Branch*
+8.	Select **_desired-Branch_**
 
 9.	Choose **Next Step**
 
@@ -26,7 +26,7 @@
     <img src="media/3.png" title="Select Build Provider">
 
 11.	Under Configure your project, select **Create a new build project**
--	For Project name enter *desired-Project-Name*
+-	For Project name enter **_desired-Project-Name_**
 -	For Operating system, select **Ubuntu**
 -	For Runtime, select **Node.js**
 -	For Version, select **aws/codebuild/nodejs:8.11.0**
@@ -129,18 +129,18 @@
     "Version": "2012-10-17"
     }
     ```
--   Name policy as *desired-service-role-policy-name*
+-   Name policy as **_desired-service-role-policy-name_**
 
-13.	Choose Next step in CodePipeline console
+13.	Choose **Next step** in **CodePipeline** console
 
 14.	Select No Deployment in deploy stage
     <img src="media/4.png" title="Select Deployment Provider">
 
-15.	Choose Next step
+15.	Choose **Next step**
 
 16.	Create a service role in IAM to give AWS CodePipeline permission to use resources in your account. If you already have a service role configured for this purpose, you can choose it from the list instead of creating a role. However, if that role is not configured correctly, AWS CodePipeline might not work as expected.
 
-17.	Create & Assign below custom policy to the service role for codepipeline
+17.	Create & Assign below **custom policy** to the service role for codepipeline
 ```
 {
     "Statement": [
@@ -232,60 +232,60 @@
 }
 ```
 
-18.	In Step 6: Review, choose Create pipeline
+18.	In Step 6: Review, choose **Create pipeline**
 
 
 ## Add additional stages for approval to the CodePipeline
-1.	Go to the pipeline you created just now
+1.	Go to the **pipeline** you created just now
 
-2.	Choose Edit
+2.	Choose **Edit**
 
-3.	At the end of the desired Staging, choose Stage 
+3.	At the end of the desired **Staging**, choose **Stage**
 
-4.	For Enter stage name, enter *desired-Approval-Stage-Name*
+4.	For Enter stage name, enter **_desired-Approval-Stage-Name_**
 
-5.	Choose Action
+5.	Choose **Action**
 
-6.	For Action category, select Approval
+6.	For Action category, select **Approval**
 
-7.	For Action name, enter *desired-Approval-Stage-Name*
+7.	For Action name, enter **_desired-Approval-Stage-Name_**
 
-8.	For Approval type, select Manual approval
+8.	For Approval type, select **Manual approval**
 
 9.	Under Manual approval configuration, select arn for SNS topic already created or create new SNS topic
 
-10.	 For Comments, enter *desired-Comments*
+10.	 For Comments, enter **_desired-Comments_**
 
-11.	 Choose Add action
+11.	 Choose **Add action**
 
-12.	  Choose Save pipeline changes
+12.	  Choose **Save pipeline changes**
 
-13.	 Choose Save and continue
+13.	 Choose **Save and continue**
 
-14.	 Can verify the new pipeline changes by choosing Release change
+14.	 Can verify the new pipeline changes by choosing **Release change**
 
 ## Add additional stages for code testing to the CodePipeline
-1.	Go to the pipeline you created just now
+1.	Go to the **pipeline** you created just now
 
-2.	Choose Edit
+2.	Choose **Edit**
 
-3.	At the end of the desired Staging, choose Stage 
+3.	At the end of the desired **Staging**, choose **Stage**
 
-4.	For Enter stage name, enter *desired-Test-Stage-Name*
+4.	For Enter stage name, enter **_desired-Test-Stage-Name_**
 
-5.	Choose Action
+5.	Choose **Action**
 
-6.	For Action category, select Test
+6.	For Action category, select **Test**
 
-7.	For Action name provide *desired-Test-action-name*
+7.	For Action name provide **_desired-Test-action-name_**
 
-8.	Select the Test provider as AWS CodeBuild
+8.	Select the Test provider as **AWS CodeBuild**
 
-9.	Create a new CodeBuild Project with project name as *desired-project-name*
+9.	Create a new CodeBuild Project with project name as **_desired-project-name_**
 
-10.	Configure the same environment as done earlier for build/deployment stage
+10.	Configure the same environment as done earlier for **build/deployment stage**
 
-11.	select Build specification as Insert build commands
+11.	select **Build specification as Insert build commands**
     <img src="media/5.png" title="Build specification as Insert build commands">
 
 12.	Add following build commands for example
