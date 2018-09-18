@@ -22,7 +22,7 @@
 
 6.	Choose **Connect to GitHub** if not already signed in
 
-7.	Select Repository **ApplicationServices**
+7.	Select Repository **_desired-repository_**
 
 8.	Select **_desired-Branch_**
 
@@ -296,7 +296,7 @@
 
 12.	Add following build commands for example
     ```
-    cd TenantAdminAPIs && npm install && npm install -g serverless && npm run test
+    cd <desired-Folder-Name> && npm install && npm install -g serverless && npm run test
     ```
     <img src="media/6.png" title="commands">
 
