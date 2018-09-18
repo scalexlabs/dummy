@@ -300,7 +300,7 @@
     ```
     <img src="media/6.png" title="commands">
 
-13.	Select the CodeBuild service role created earlier Then say “save build project”
+13.	Select the CodeBuild service role created earlier Then say **Save Build Project**
 
 14.	You are done adding test stage to your CICD pipeline using serverless.
     Note: use below sample screen to create and push buildspec.yml file in the root repository.
