@@ -303,16 +303,17 @@
 13.	Select the CodeBuild service role created earlier Then say **Save Build Project**
 
 14.	You are done adding test stage to your CICD pipeline using serverless.<br/>
-    Note: use below sample snippet to create and push buildspec.yml file in the root repository.
-    ```
-    version: 0.1
-    phases:
-        install:
-            commands:
-                - cd <desired-Folder-Name> && npm install
-                - npm install -g serverless
-                - echo Build enviromment `uname -a` `aws --version 2>&1` node/`node --version` npm/`npm --version`
-        build:
-            commands:
-                - cd <desired-Folder-Name> && pwd && ls && serverless deploy
-    ```
+
+**Note:** use below sample snippet to create and push buildspec.yml file in the root repository.
+```
+version: 0.1
+phases:
+    install:
+        commands:
+            - cd <desired-Folder-Name> && npm install
+            - npm install -g serverless
+            - echo Build enviromment `uname -a` `aws --version 2>&1` node/`node --version` npm/`npm --version`
+    build:
+        commands:
+            - cd <desired-Folder-Name> && pwd && ls && serverless deploy
+```
