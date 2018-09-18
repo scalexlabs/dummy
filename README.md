@@ -1,6 +1,6 @@
-# Implementing serverless CICD Pipeline with AWS
+# Implementing Serverless CICD Pipeline with AWS
 
-##Tools Used 
+## Tools Used 
 - AWS CodePipeline 
 - AWS CodeBuild 
 - AWS Simple Notification Service  
