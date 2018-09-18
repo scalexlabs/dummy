@@ -1,4 +1,4 @@
-# CICD
+# Implementing serverless CICD pipeline with Amazon Web Services
 
 ## Build a CodePipeline
 1.	Open CodePipeline Service in aws console. <br/>
