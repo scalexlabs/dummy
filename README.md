@@ -134,7 +134,7 @@
 13.	Choose **Next step** in **CodePipeline** console
 
 14.	Select No Deployment in deploy stage
-    <img src="media/4.png" title="Select Deployment Provider">
+    <img src="media/4.png" style="margin-left: 0px;" title="Select Deployment Provider">
 
 15.	Choose **Next step**
 
