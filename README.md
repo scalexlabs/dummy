@@ -1,6 +1,12 @@
-# Implementing serverless CICD pipeline with Amazon Web Services
+# Implementing serverless CICD Pipeline with AWS
 
-## Build a CodePipeline
+##Tools Used 
+- AWS CodePipeline 
+- AWS CodeBuild 
+- AWS Simple Notification Service  
+- Serverless Framework
+
+## Building the CodePipeline
 1.	Open CodePipeline Service in aws console. <br/>
     (https://<region>.console.aws.amazon.com/codepipeline)
 
