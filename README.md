@@ -18,25 +18,25 @@
 
 7.	Select Repository **ApplicationServices**
 
-8.	Select desired Branch
+8.	Select *desired-Branch*
 
 9.	Choose **Next Step**
 
-10.	In Step 3: Build, select Build provider as AWS CodeBuild
+10.	In Step 3: Build, select Build provider as **AWS CodeBuild**
     <img src="media/3.png" title="Select Build Provider">
 
-11.	Under Configure your project, select Create a new build project
--	For Project name enter <Desired-Project-Name>
--	For Operating system, select Ubuntu
--	For Runtime, select Node.js
--	For Version, select aws/codebuild/nodejs:8.11.0
+11.	Under Configure your project, select **Create a new build project**
+-	For Project name enter *desired-Project-Name*
+-	For Operating system, select **Ubuntu**
+-	For Runtime, select **Node.js**
+-	For Version, select **aws/codebuild/nodejs:8.11.0**
 -   Leave the Role name under AWS CodeBuild service role as default 
 -	Open Advanced section
 
-12.	By default, service role will not have required permissions
+12.	By default, **service role** will not have required **permissions**
 -	Open IAM console
--	Select the service role
--	Create & Assign below custom policy
+-	Select the **service role**
+-	Create & Assign below **custom policy**
     ```
     {
     "Statement": [
@@ -129,7 +129,7 @@
     "Version": "2012-10-17"
     }
     ```
--   Name policy as desired-service-role-policy-name
+-   Name policy as *desired-service-role-policy-name*
 
 13.	Choose Next step in CodePipeline console
 
@@ -242,19 +242,19 @@
 
 3.	At the end of the desired Staging, choose Stage 
 
-4.	For Enter stage name, enter <Desired-Approval-Stage-Name>
+4.	For Enter stage name, enter *desired-Approval-Stage-Name*
 
 5.	Choose Action
 
 6.	For Action category, select Approval
 
-7.	For Action name, enter <Desired-Approval-Stage-Name>
+7.	For Action name, enter *desired-Approval-Stage-Name*
 
 8.	For Approval type, select Manual approval
 
 9.	Under Manual approval configuration, select arn for SNS topic already created or create new SNS topic
 
-10.	 For Comments, enter <Desired-Comments>
+10.	 For Comments, enter *desired-Comments*
 
 11.	 Choose Add action
 
@@ -271,17 +271,17 @@
 
 3.	At the end of the desired Staging, choose Stage 
 
-4.	For Enter stage name, enter <Desired-Test-Stage-Name>
+4.	For Enter stage name, enter *desired-Test-Stage-Name*
 
 5.	Choose Action
 
 6.	For Action category, select Test
 
-7.	For Action name provide desired-Test-action-name
+7.	For Action name provide *desired-Test-action-name*
 
 8.	Select the Test provider as AWS CodeBuild
 
-9.	Create a new CodeBuild Project with project name as desired-project-name
+9.	Create a new CodeBuild Project with project name as *desired-project-name*
 
 10.	Configure the same environment as done earlier for build/deployment stage
 
