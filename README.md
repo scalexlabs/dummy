@@ -8,7 +8,7 @@
 
 ## Building the CodePipeline
 1.	Open CodePipeline Service in aws console. <br/>
-    (https://*region*.console.aws.amazon.com/codepipeline)
+    https://*region*.console.aws.amazon.com/codepipeline
 
 2.	Before creating a new pipeline, select the region of your choice from top left corner region selection option
     <img src="media/1.png" title="Select Region">
